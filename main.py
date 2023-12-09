@@ -13,7 +13,6 @@ numbers_sumation = 0 #need to start with zero numbers
 
 #read 1 line strip the last enter characters from it
 for line in input_data.readlines():
-    line = line.lstrip('\n')
     #try to find the first and last number
     try: 
         found_numbers = expr.findall(r'\d', line)
